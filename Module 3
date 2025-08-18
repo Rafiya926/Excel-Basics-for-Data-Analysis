@@ -1,1 +1,481 @@
+Cleaning and Wraggling the data using spreadsheet
+
+Introduction to Data Quality
+
+Data analysis can play a pivotal role in business decisions and processes. In order to use the data to make confident decisions, 
+we must have the right information for the project and the data must be free from errors. 
+we will learn how to profile data to discover inconsistencies. Whether we are working with small sets of data or analyzing 
+a spreadsheet with thousands of rows, one of the most difficult parts of the data analysis is finding and keeping clean data.
+To help with this process and qualify the data, look for these five traits: Accuracy, Completeness, Reliability, Relevance and Timeliness.
+Accuracy is the first and most significant aspect to data quality. A data analyst must clean the data set by removing duplicates, 
+correcting formatting errors, and removing blank rows.
+
+Another important aspect of data quality is determining if the information required to complete the data set is readily available. 
+Why does this matter as a trait for quality data? Let’s say we are given the task to calculate the revenues of all sales per region. 
+After collecting the data, we discover that no regions were specified. This data would then be considered incomplete and other 
+sources would have to be considered to obtain the data required. Reliability is another vital factor in determining the quality 
+of the data. For instance, let’s say we are given the task to determine the agent revenue by customer.
+
+When gathering the data, we find the agents keep their own records and do not always update the information in the shared company 
+database. With those factors in mind, we would then determine that the data in the shared company database was unreliable and
+new processes would need to be established to ensure reliable data. Relevance is another trait of quality data.
+When collecting information, a data analyst must consider if the data being assembled is really necessary for the project. 
+For example, when reviewing the data related to the sales revenue per customer, information such as customer 
+birthdays and other personal information is also included. By making the determination early to exclude the personal
+information from the data set, the analyst would save themselves from having to review unnecessary information.
+The last factor in determining the quality of the data is timeliness.
+
+This trait refers to the availability and accessibility of the selected data. Let’s say our sales report is going to be used
+for weekly employee reviews, but our report is only refreshed once a month. This error in refreshing the data would 
+cause our report to become outdated, and would have serious consequences for employee reviews. In this video we learned the 
+important role of a data analyst in qualifying data. By considering the five traits of good quality data, an analyst can save time, 
+avoid serious issues, and have data that is free from errors. we will take the collected data and learn how to 
+import it to our spreadsheet.
+
+
+Importing File Data
+
+Now that you have learned about the importance of data quality, now you will learn how to import data from a text file using 
+the Text Import Wizard, learn how to adjust column widths, and learn how to add and remove columns and rows. As you know,
+by default Excel works with .xlsx or .xls files and opens them as workbooks. But Excel can also use data that is in other 
+formats, such as plain text, or data that has been comma-separated and tab-separated. Sometimes, these source files will be 
+saved with a .txt extension and referred to as ‘text’ files, but others might be saved with a .CSV file extension, 
+and are typically referred to as CSV files. Here in Notepad, I have opened a text file that contains data about car sales,
+and it uses comma separated values (or CSVs) to separate each bit of data in a record. Notice that the top line holds headings,
+such as Manufacturer, Model, Engine_size, and so on, and each one is separated by a comma.
+
+We want these to become our headers when we import the file into Excel. The line below these headings is the first line of real
+data, and again you can see that each piece of data is also separated by a comma. There are 16 headings and there are also 
+16 pieces of data on each of the lines below the headings. If we scroll to the bottom, we can see that last data record is 
+for the Volvo S80. Now, to open the file in Excel, we choose File, Open, and then either select the file from the recently used list,
+or click Browse to find the file we want to import. When we open the file, the Text Import Wizard launches automatically, 
+and it will start to try and determine what your file is. Note that it has been detected as being a delimited file; that is, 
+one that has its data fields separated by a character such as a comma or a tab.
+
+As we want the headings to become headers in Excel, we need to ensure that we select the option ‘My data has headers’. 
+We can see a mini preview of the data in the preview box below. Then we click Next to proceed in the wizard. 
+In step 2 of the wizard, we need to select our delimiter; that is, which character is separating our pieces of data; 
+so we select Comma, and deselect any others. Note the data preview now starts to show us what the imported data will look like. 
+You can scroll down and across this preview window to ensure that the data is going to look as you want and expect.
+It all looks OK, so we’ll continue with the wizard.
+
+In step 3 of the wizard, we can set the data format for each column. For example, you might want to change a column to
+Text or Date format. In this case we can just accept the default General format, and finish the import wizard.
+In Excel we can see that the headings in the text file have been imported as a header row. But also notice that some of
+the columns are not showing all the data; some of the headings are not showing in full and some of the data is not shown 
+either; all you can see are a number of hashes in the cells. This is because the column widths are too narrow in some cases. 
+If you remember, we can manually adjust a column’s width by dragging the divider across.
+
+But to change them all in one go, we select all the columns first, then double-click one of the selected column dividers. 
+We can do a similar thing with rows by dragging to make them bigger or smaller, or double-clicking a row divider to autosize it.
+There are some columns that we have decided we don’t really need; namely Vehicle_type and Latest_Launch, so let’s remove those.
+This can either be done using the Delete drop-down menu in the Cells group on the Home tab, and select Delete Sheet Columns,
+or by selecting and right-clicking a column and deleting it that way. To add another column, you simply select the column to 
+right of where you want your new column to be, then right-click the column and choose Insert. And let’s give the header a name, 
+such as Year. To delete a row you don’t need, select the row, right-click it, and choose Delete.
+
+And to add a row, select the row below the place you want to add your new row, right-click the row, and choose Insert. 
+If you want to save the file as an Excel file, you can either choose File, Save As, or you can click Save As in the yellow
+tooltip that appeared at the top of the worksheet when we imported the file, and then you would choose ‘Excel Workbook (*.xlsx)’
+in the ‘Save as type’ box. In this video, we learned how to import data using the Text Import Wizard, we learned how to adjust 
+column widths, and we learned how to add and remove columns and rows. we will discuss the importance of data
+privacy, including sensitive information, and personally identifiable data.
+
+
+Basics of Data Privacy
+
+we will learn about data privacy and the regulations that govern the collected data. When collecting customer data, 
+specific regulations apply to how that data can used. By understanding data privacy regulations and getting familiar
+with the following three fundamentals, you can eliminate the risk of financial penalties and keep the trust of your customers. 
+Confidentiality, Collection and Use, and Compliance. 
+Confidentiality is an important element in data privacy and it acknowledges that the customer’s personal information belongs to them. 
+The types of information that can be accessed by a data analyst can range from sales forecasts, to employee information,
+or even patient records. When accessing these types of records the analyst must be able to recognize the different 
+types of personal data.
+
+Personal Information or PI is any type of information that can be traced back to a specific individual. 
+This type of information can include anything from emails to images. Personally Identifiable Information or 
+PII is specific information that could be used to identify an individual. This type of information could include a 
+social security number or a driver’s license number. And lastly , Sensitive Personal Information or SPI, may not
+necessarily identify a specific individual, but contains private information that needs to be protected because if
+made public it could possibly be use to harm the individual . The type of information can include data about race,
+sexual orientation, biometric or genetic information. By understanding personal data and the associated regulations, 
+we can efficiently anonymize our data by removing unnecessary information.
+
+This type of action can help build consumer confidence and continue to develop the free flow of information.
+When searching through data, the analyst must know the location of the company collecting the data and the location of the respondent.
+Knowing where the data was collected is an essential element of data privacy and what regulations must be applied.
+The General Data Protection Regulation or GDPR is a regulation specific to the European Union, and only applies 
+to the jurisdiction of the individual. A new law created in Brazil, the LGPD, will take effect in August 2020. 
+These new data policy regulations apply to individuals within Brazil, and ignores the location of the data processor. 
+While the United States does not have one country-wide principle law for data privacy. Because of this individual 
+states began to make their own regulations. For instance, California created the California Consumer Privacy Act (CCPA) 
+to better protect customer data. There are also industry specific regulations that govern the collection and use of 
+sensitive and personal data. For example, in Healthcare, HIPAA privacy rules govern the collection and disclosure of 
+protected health information.
+
+In retail, the PCI standards govern credit card data, and failure to safeguard cardholder information can result in hefty fines.
+With a basic understanding of these policies, we are able to remain compliant when handling any sensitive information.
+Unfortunately, breeches in customer data is an all too common occurrence and understanding how to remain compliant is essential. 
+Understanding the data privacy regulations of the European Union, the United States, and other countries as well as 
+industries is key to keeping data safe. Companies must comply with these privacy regulations at all times and also make 
+sure policies are readily accessible to employees. For example, let’s say a data analyst downloads a spreadsheet of 
+sensitive information. In order to complete the report by Monday morning, the analyst decided to take their work laptop home
+for the weekend. After driving home, the analyst accidently left the laptop in their car. The next morning, 
+they found their car had been stolen along with the laptop. Because it is the responsibility of the company to keep customer data 
+safe, this was a breach of privacy when the data left company property.
+
+This type of action could not only cost the company large amounts of money in fines and penalties, but could also reduce
+consumer confidence causing a significant impact to revenue. While data privacy applies to most data that is collected, 
+there are some instances where these regulations do not apply. In order for these laws and regulations not to apply,
+the particular collection of data must be completely anonymous. To make data anonymous means to exclude all data which 
+ties it back to a particular individual. While this approach might not be practical in all circumstances, collecting data 
+with privacy in mind could remove privacy limitations and make data collections more accessible. In this video we learned 
+about the importance of data privacy and the challenges that a data analyst can face when collecting and sorting through data. 
+we will learn about different methods for cleaning data in a spreadsheet.
+: Added to Selection. Press [CTRL + S] to save as a note
+
+
+Summary and Highlights
+In this lesson, you have learned the following information:
+The Five Traits of Data Quality: 
+Accuracy 
+Completeness 
+Reliability 
+Relevance 
+Timeliness 
+
+Importing Text: You can use the ‘Text Import Wizard’ to import data from other formats, such as plain text, 
+or comma-separated value files. 
+
+The Three Fundamentals of Data Privacy: 
+Confidentiality 
+Collection and Use 
+Compliance 
+
+
+Question 1
+ What are the fundamental principles of data privacy mentioned? (Select all that apply.)  
+A. Collection and Use  
+ Confidentiality  
+
+Question 2
+Which of the following are the essential traits of quality data? Select all that apply.
+A. Timeliness
+   Completeness
+   Accuracy
+
+Question 3
+Why is it important to ensure the reliability of data?
+A. To avoid basing decisions on outdated or incorrect information. 
+
+Question 4
+Which of the following steps is included in the process for importing data from a text file using the Text Import Wizard in Excel? Select all that apply.
+A. Indicate whether your data has headers.
+Select the delimiter that separates the data fields.
+Set the data format for each column.
+
+Question 5
+What is the primary responsibility of a company when it comes to data privacy?
+A. To ensure that customer data is kept safe and complies with privacy regulations. 
+
+
+Question 1
+Which data quality trait can be summarized by asking if the data is really necessary? 
+A. Relevance 
+
+Question 2
+Which data quality trait refers to the availability and accessibility of the data?
+A. Timeliness 
+
+Question 3
+After importing a text file into Excel, you find some columns aren't showing all data. How can you fix all column widths at the same time?
+A. Drag a divider across 
+Select all columns and double-click one of the selected column dividers 
+Click the Format button 
+Shorten the text so it fits 
+
+
+Removing Duplicated or Inaccurate Data and Empty Rows
+
+Now that we have learned about the importance of data quality and data privacy, we will learn how to deal with inaccurate data,
+how to remove empty rows, and how to remove duplicated data. It’s very common when collecting or
+importing data - whether through manual or automated processes - to get errors and inconsistencies in your data.
+This can be as simple as spelling mistakes, extra white space, or the wrong case used in text, to empty rows or 
+missing values in your data, to inaccurate or duplicated data. Having these errors and inconsistencies in your data can lead 
+to issues with formulas not working, with unsuccessful sorting and filtering operations and therefore inadequately visualized
+and presented data findings. These data errors and inconsistencies require you to carry out some form of data-cleaning routine 
+to improve the quality and usability of the data. Let’s start off with one of the easier of those tasks, which is spell checking. 
+In Excel, this works in pretty much the same way as you may have already encountered in applications such as Microsoft Word or 
+other common word processing applications.
+
+I have some data here relating to the sales of toy vehicles, and the first thing we need to do is select what data we wish
+to check for spelling; in this case we will try column K which contains the product line data. Then we click Spelling which
+is on the Review tab. Well that seems to be OK, so let’s try the Country information in column T. So, we do have an error here,
+where a country name has been misspelt, or more likely, mistyped. We just click Change if we are happy with the spelling suggestion, 
+or we could choose another suggestion from the list, or even ignore this error if we know the data is correct, 
+but in this case we will change it. Here’s another typo for a country name and here’s one more. 
+So, that seems to be all the errors in this column, let’s try the final column now which is the deal size in column X.
+
+Here is a misspelling of the word small and another for medium. And that seems to be all for this column. 
+The next inconsistency we will look for is empty rows. Empty rows in your data can cause lots of issues relating
+to moving around your data, working with formulas, and sorting and filtering. Therefore, it’s very important to 
+remove them from your data. If you remember from an earlier lesson, when we click CTRL+DOWN ARROW, it should take 
+us to the end of that column of data, but notice if we do that in this dataset, the cursor keeps stopping when it 
+gets to an empty row meaning that the dataset if essentially being split into multiple sections, separated by these empty rows.
+That’s not good, so let’s resolve that now.
+
+We have a couple of options; one option is to just manually scroll down the sheet looking for empty rows and deleting each one,
+which is easy enough, and fine to do if you only have a small amount of data, but imagine if you were dealing with hundreds,
+or thousands, or even tens of thousands of rows? That would be a very laborious and time-consuming process. 
+There is a much better way - which involves selecting all our data first, either using the mouse, 
+or the CTRL+SHIFT+END keyboard shortcut. Then we select the Filter icon on the Data tab.
+We can now see that each column has a filter icon next to the column header. If we then select the Customer Name column-filter
+in column M then uncheck Select All then scroll down to the bottom of the list, we can check the item called Blanks, 
+and then click OK. This will now show only the empty rows at the top of our sheet; this can be quite hard to see,
+but if you look in the row numbers, you can see that rows 28,29,65,73,74,75 and 117 are listed at the top and are
+highlighted in blue text.
+
+We can now select these rows, either using the mouse or going to the first cell in the first data row, which is A28, 
+and then using the CTRL+SHIFT+END keyboard shortcut then delete the offending empty rows. We then need to clear the filter 
+and turn it off, so we can view our data again. Now, if we go back to the first row in the top of the datasheet and try the
+CTRL+DOWN shortcut again, to go to the end of the data column, it will work. The next inconsistency we’ll look for is 
+duplicated rows of data; it’s quite common for duplicate data rows to exist in your imported data, caused either by 
+human input error, or an error in the import process. There are two ways of doing this in Excel; the first way includes 
+reviewing the data you plan to remove first, before deleting it, to ensure you are deleting the right data. 
+This is our preferred method as it provides an additional level of data security. The second method, 
+which we will also show you, is simpler, as you don’t review the data to be removed first, but it lacks the security of the 
+first method.
+
+It’s important to select a column of data that you would NOT expect to have duplicate values in. For example, if we consider 
+the Price Each column, which is C, we would expect lots of these values to be repeated, because the unit price of some products
+is the same, so this is a bad example of a column to use to find duplicates. Instead, let’s use the Sales column in column E,
+because it is far less likely that these values will be duplicated in the normal process of things, as they are the total sales 
+for each order. So, we select the column…and choose Conditional Formatting, then Highlight Cells Rules, and then Duplicate Values. 
+When we click OK, and scroll down the sheet, we can see that only a few values have been identified as being duplicates. 
+There seem to be duplicate values in rows 36 to 40 and in rows 74 to 78 Let’s zoom out so we can see both duplicate sections together. 
+It seems like these are in fact exact duplicate entries, and are likely to be an input error.
+
+Let’s delete the second section of duplicate rows as they are out of sequence; as they relate to Motorcycles sales and are in the
+Ships section of the sheet. So that was the first, and recommended method of removing duplicate rows of data, which previews the 
+data to be removed first. Now, let’s try the second, simpler, but less secure method. Let’s go back to 100% zoom, and go back to 
+the top of the worksheet. This time, we select the whole datasheet, and on the Data tab, we use the Remove Duplicates button. 
+We then unselect all the columns, then only select the Sales column. And the duplicate rows are deleted.
+
+The last cleaning process we’ll look at in this video is using the Find & Replace feature to repair some misspelt surnames in 
+the customer contacts column. Find and Replace tools are under Find & Select on the Home tab in Excel, and if you have used other
+Office products such as Word, it should be familiar to you already. We’ve had an email from a Swedish customer, informing us that
+we have his surname spelt incorrectly on his order sheets. So, we type the misspelt surname in to the ‘Find what’ box and 
+click Find Next, then click it again to see there are multiple incorrect entries. If we click Find All, all instances are listed,
+and we can open the Replace tab to enter a name to replace the incorrect spellings. His surname should be Larsson with a double ‘s’, 
+so we’ll replace all instances with that corrected spelling. That looks better, and we are finished.
+
+we learned how to deal with inaccurate data, how to remove empty rows, and how to remove duplicated data. 
+we will look at changing the case of text, fixing date formatting errors, and trimming whitespace from data.
+
+
+Dealing with Inconsistencies in Data
+
+we’ve learned how to deal with inaccurate data, how to remove empty rows, and how to remove duplicated data,
+we’ll look at changing the case of text, fixing date formatting errors, and trimming whitespace from data. 
+When you collect or receive data from varying sources, it’s quite common to find that your data contains text in mixed case; 
+that is, some in uppercase, some in lowercase and some in capitalized proper case (also known as sentence case).
+Some of this may be intentional; but often it’s not. Excel doesn’t have a Change Case button like there is in Microsoft Word,
+so you need to use other methods to perform this data cleaning task. Those methods are functions; 
+namely the UPPER, LOWER, and PROPER functions. You can use these functions to help you change the case of text in your data. 
+You can see that the header row here is using all uppercase characters, so if you want to change that to use proper case then 
+you need to add another row to put the function in; this is referred to as a ‘helper’ row.
+
+The PROPER function is simple to use; just type equals, then PROPER, then open parenthesis,
+then the cell reference - In this case A1 - then close parenthesis, and press Enter. Here you can see that the result in A2
+is in proper case. Now you can try and drag the formula right across to column X by using the Fill Handle on A2...
+but this can be very tricky when you have a lot of columns, so let’s try another way. Instead of dragging, 
+you can use SHIFT+RIGHT ARROW to select the columns across to X first then press F2 to bring the cursor into focus in cell A2
+then you hold down the CTRL key while you press Enter, and it fills across for you. You might think that you could now remove 
+the original row; but look what happens when you do; you get a REF error because the formula is referencing an invalid reference, 
+and the header row cells now contain just the failed formula rather than the actual header text. So, you need to undo that, 
+and instead, you copy the contents of the helper row to row 1 but when you paste you need to choose the Paste Values option.
+Now the header row cells just contain header text, and you can remove the helper row in row 2.
+
+Let’s now use the UPPER function to change text from proper case to upper case. Insert a column to the right of the column
+you want to change. This will be a ‘helper’ column. Then you type the formula containing the UPPER function in 
+the first data cell in this new helper column. Again, it’s a simple formula; you type equals, then UPPER, then open parenthesis, 
+then the cell reference – in this case T2 – and then close parenthesis and press Enter You can see the result is 
+the country name in upper case, and you can then copy that formula down the rest of the column by double-clicking 
+the Fill Handle cross symbol. As before, you then copy and paste the contents of the helper column to the original column,
+but use the Paste Values option. Now you can delete the helper column Next, we’ll use the LOWER function to change 
+text from proper case to lower case.
+
+As before, you insert a column to the right of the column you want to change. This will be another ‘helper’ column.
+Then you type the formula containing the LOWER function in the first data cell in the helper column. Once again,
+it’s a very simple formula; you type equals, then LOWER, then open parenthesis, 
+then the cell reference – in this case K2 – and then close parenthesis, and press Enter You can see the result is the product 
+line data in lower case, and you can now copy the formula down to the rest of the column by double-clicking the Fill Handle once more.
+As before, you then copy and paste the contents of the helper column to the original column, but ensuring you use the 
+Paste Values option. Now you can delete the helper column It’s quite common to receive data that has a mixture of date formats,
+or that uses a date format that isn’t suitable to your region. Now let’s look at how to change the format of some dates.
+
+You can see that this date format is currently using a 2-digit day, a 2-digit month, and a 4-digit year value. 
+When you open the Number format dialog box, you can see in the Locale box, that this is an English (United Kingdom) date format.
+You want to use a US date format, so you first change the locale to English (United States). In this list,
+you can see there are several date options to choose from; let’s choose one which uses the full month name, then a 2-digit day,
+and a 4-digit year value. You could then copy this format to the rest of the date cells. However, if you want to
+format these dates using your own custom format, you can do that too. In the Number format list, you select Custom, 
+and then choose an existing format that is similar to what you want and simply modify it to create a new custom format; 
+here we’ll have the day, then 3-letter month, then 4-digit year.
+
+To apply that new custom date format to the rest of the column you could either use the Format Painter tool, 
+or you can select the rest of the column and choose the new custom format from the Custom list in the Number Format dialog box.
+You might find that your data has some whitespace; that is, unwanted spaces in your data. Here you can see that we have some 
+spaces at the start some spaces at the end and some unwanted double spaces in the middle of our data. We’ll first have a look at
+what you can do to clean up these unwanted spaces in your data by using the Find & Replace feature in Excel. So you first select
+all the data then on the Home tab, you click Find & Select, then Replace. To get rid of double spaces, 
+you enter a double space in the ‘Find what’ box, and a single space in the ‘Replace with’ box. Then you click Find Next.
+
+And choose Replace for each item you want to change. You could click Replace All to do all the fixes in one go but unless 
+you are absolutely sure of the changes, it’s better practice to check and replace each one in sequence in case there are some 
+valid reasons for these extra spaces. If you have a very large dataset you might also choose Replace All to save you a lot of time. 
+So using the Find & Replace feature got rid of most of those unwanted whitespaces, but not all of them; we removed double 
+spaces using that feature, but we also have some single spaces left at the start and end of some of the cells. 
+You can’t use Find & Replace to remove single spaces otherwise you would lose ALL
+spaces in your data - including standard spaces between words - which you don’t want to remove.
+But, there is another tool you can use to clear spaces from cells, and that’s the TRIM function.
+To use the TRIM function, you once again insert a helper column.
+
+The TRIM function is simple to use; just type equals, then TRIM, then open parenthesis, then the
+cell reference – in this case M2 – then close parenthesis, and press Enter. You can then double-click the Fill 
+Handle symbol to copy this formula down to the remainder of the column. Now you need to copy the contents of the
+new column N to column M, and remember once again to paste using the Paste Values option. You can now see that 
+those erroneous spaces have been removed, or more accurately speaking, have been trimmed. And lastly, you can 
+remove the helper column. we learned how to change the case of text, how to change date formatting,
+and how to trim whitespace from data. we will discuss how to use the Flash Fill and Text to Columns 
+features in Excel to help clean data.
+
+
+More Excel Features for Cleaning Data
+
+Now that we’ve learned how to change the case of text, how to change date formatting, and how to trim whitespace from data,
+we’ll discuss how to use the Flash Fill and Text to Columns features in Excel to help clean data. We used Flash 
+Fill briefly earlier in the course as a quick method of entering data that fits a specific pattern, 
+such as the names of months or days of the week, but it can also be useful as a data cleaning tool.
+It can split a column of full names into two separate columns for the forename and surname, and it can also help to modify 
+the naming convention used in a column of names. For example, in the vehicle toy sales worksheet there is a column 
+containing the last names of contacts, and another containing their first names. If you want to use the Flash Fill feature 
+to combine these names into one name column, you first insert a helper column; let’s call it ‘Contactname’.
+Then, in the first row in the new column you enter the full name of the first contact in the format of your choice; 
+for example you might want surname, then a comma, then the forename, or you might want surname, and just an initial,
+and so on; in this case let’s just enter the name in the standard format of forename then surname with a space between them, 
+and then we press Enter. Next you start typing the second contact’s name in, and you’ll see that Flash Fill displays a
+preview of the remaining names for you.
+
+If you’re happy with what’s in the preview, all you have to do is press Enter, and it fills in the remaining names for 
+you right down the column. It even works when there are two names in one of the columns such as Wing C here … and Da Cunha here.
+Now you can remove the original columns if you no longer need them. So, in the previous task we saw how to combine two columns 
+of data into one column using Flash Fill; now let’s see how to use it to modify the naming convention in a column. 
+Let’s switch to the customer contacts worksheet. Then in the first data row of the next column, that is B2, 
+we type the name of the first contact using whatever naming convention we want. We’ll use surname, then comma, then a space, 
+then the forename, and press Enter.
+
+Again, when we start typing the second contact’s name in the next row down, that is B3, Flash Fill detects the pattern
+and fills in the remaining names in column B when we press Enter. You could then copy and paste the column header,
+and delete the original column A. What we couldn’t do with Flash Fill was take a single column with two names in
+and split that into two separate columns. We need to use the ‘Text to Columns’ feature to do that. 
+So, we’ll close this worksheet and we won’t save the changes. Now, let’s see how the ‘Text to Columns’
+feature can help with data cleaning too. As the name suggests, and unlike Flash Fill, the ‘Text to Columns’ feature can
+take a column containing multi-part text and split that text into one or more other columns.
+
+This can be useful for splitting any multi-part text, such as names or addresses, into separate component parts. 
+Let’s open the customer contacts worksheet again. Then we’ll add column headings for the next two columns, and copy 
+the cell format used in the first column header. Then we’ll widen the columns. If we then select the data in 
+column A from A2 to A23, and on the Data tab, click Text to Columns, a wizard is launched. On the first page of the wizard, 
+ensure that ‘Delimited’ is selected. On the second page, ensure that only ‘Space’ is selected as the delimiter.
+
+On the third page of the wizard, click the little arrow next to ‘Destination’… and select cell B2 on the worksheet,
+then click the little arrow again to return to the wizard. We’re now finished with this wizard. You can see that the full
+customer contact names in column A have now been successfully split into two new columns in B and C, and you could now remove
+column A if you no longer need it. We’ll close this worksheet, and again we won’t save the changes. 
+You can also achieve the same result using functions. This would be required if you were using ‘Excel for the web’, 
+the online version of Excel, as this doesn’t have the ‘Text to Columns’ feature. There’s also a bit more flexibility with functions,
+which can be especially useful if you have names that are complex and mixed, such as having hyphenated names or some names 
+with a middle initial, some with two middle initials, and some with no middle initial.
+
+So, we open the customer contacts worksheet again. Then we’ll add column headings for the next two columns, 
+and copy the cell format used in the first column header. Then we’ll widen the columns. Next, we enter the formula in
+B2 to extract the forename part of the name. This formula extracts five characters from cell A2, starting from the left
+and including the space. Then, in cell C2 we enter the formula to extract the surname part of the name. 
+This formula extracts seven characters from cell A2, starting from the right.
+
+Then we double-click the Fill Handle in cell B2 to use AutoFill to complete the column. And we do the same to the Fill Handle
+in cell C2 to use AutoFill to complete that column also. we learned how to use the Flash Fill and Text to Columns 
+features in Excel to help clean data.
+
+Summary and Highlights
+In this lesson, you have learned the following information:
+It’s important to remove any duplicated or inaccurate data, and it’s important to remove any empty rows in your dataset. 
+There are several other types of data inconsistency that you may need to resolve, in order to properly clean your data:  
+
+Change the case of text
+Fix date formatting errors
+Trim whitepace from your data  
+You can use the Flash Fill and Text to Columns features in Excel to manipulate and standardize your data, 
+and functions can also be used to help manipulate and standardize your data. 
+
+Question 1
+What's one of the easiest common errors or inconsistencies to fix when importing data? 
+A. Spelling mistakes
+
+
+Question 2
+What is the first thing you should do when checking spelling errors in Excel? 
+A. Select the data you want to check for spelling 
+
+Question 3
+What feature can you use to fix text that appears in mixed case? 
+A. Functions 
+
+Question 4
+What is one of the functions you can use to change the text case in your data? 
+A. LOWER 
+
+Question 5
+What does the Flash Fill feature have in common with the UPPER, LOWER, and PROPER functions? 
+A. Requires a helper column or row 
+
+Question 6
+Which of the following tasks can Flash Fill do? Select all that apply.
+A. Separate first and last names from a single column
+Combine two columns of data into one
+
+
+Question 1
+What is one of the issues that empty rows cause in your spreadsheet?
+A. Formula errors 
+
+Question 2
+How to remove all empty rows at the same time in an imported spreadsheet?
+A. Select all rows and then filter for Blanks, select these and then delete 
+
+Question 3
+There are two methods to locate and remove duplicated rows in Excel, what is the easiest way?
+A. Select all data and click the Remove Duplicates button 
+
+Question 4
+What does the PROPER function do?
+A. Changes text to sentence case 
+
+Question 5
+Why do you need to use the Paste Values option when you paste contents from a helper row to the original row?
+A. Makes sure formulas aren’t also copied 
+
+Question 6
+What is one of the ways to apply new data formats to the rest of a column? 
+Format button 
+Format Painter tool 
+
+Question 7
+What tools or features can we use to split a single column with two names in it into two separate columns
+with a name in each? Select all that apply
+A. Format Painter tool 
+
+
 
