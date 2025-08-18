@@ -1,1 +1,588 @@
+Intro to Analyzing Data Using Spreadsheets
+
+we have learned how to collect and clean our data, it is time to decide the best method for analysis. 
+we will discuss the importance of filtering, sorting, performing calculations, and shaping our data to provide meaningful information.
+Deciding how to manipulate our data can sometimes be difficult. Before we make any changes or adjustments, 
+we will need to visualize the final output. Below are some questions to ask before beginning the task.
+How big is the dataset? What type of filtering is required to find the necessary information?
+
+How should the data be sorted? What type of calculations are needed? Now that we have visualized the final output, 
+we must decide the best approach to shape our data. The most basic step would be to filter and sort the data.
+By sorting the data, we are able to organize it based on conditions such as alphabetically or numerically. 
+For example, if we wanted to check for duplicate order numbers, we could sort the data and quickly see any duplicates. 
+After sorting and removing the duplicate row, we find that the view needs to be more specific to meet our requirements.
+
+We now decide that we only want to see the data for the month of November. By adding a filter, we can now choose to 
+only see items with a ‘MONTH_ID” that is equal to “11”. By filtering our data, we are now able to only see the rows
+that meet the filter criteria and it allows us to better analyze our information. Becoming familiar with all of the 
+tools to analyze data can seem daunting, but one key benefit of using a spreadsheet is the ability to use functions. 
+Functions in Excel are organized by several categories, including mathematical, statistical, logical, financial, and
+date and time-based. Let’s say we wanted to get an average of company revenue for the month of June. We realize there
+are over 100 items that would need to be calculated.
+
+In normal circumstances, to get an average, we would have to create a formula to add each row and divide by the total
+number of rows. This type of calculation would not only be very long, but can expose the analyst to possibly making a mistake.
+=B1+B2+B3…../160 With the use of a function, we would be able to simplify our calculation in one easy step. =AVERAGE(B1:B160)
+While sorting and filtering data on our spreadsheet can be useful on its own, first converting your data to a table has many 
+benefits. When we convert our data into a table, we are able to filter and calculate the data more efficiently. One example 
+is the ability to easily calculate columns.
+
+For the column ‘MSRP’, we choose ‘Sum’ and we’re able to quickly calculate the sum of the column. If we then look at the data,
+and only want to calculate the ‘MSRP’ total based on Japan, we would filter the ‘Country’ column to only display Japan, and the
+column would then only add the values in the rows that were associated with Japan. While all data may not work in a table, 
+there are quite a few advantages to formatting your data as a table: Automatic calculations even when filtering Column headings
+never disappear Banded rows to make reading easier Tables will automatically expand when adding new rows Sometimes data needs 
+to be more organized then what a basic tabular format can give us, and creating pivot tables with charts can be a better way 
+to analyze and display the required information. In Excel we have the option of creating a pivot table to display and analyze 
+our data, and optionally, an associated pivot chart. For example, let’s say we want to know what company ordered products in 
+the month of October. From the original table of data, we create a pivot table to organize and analyze the required data, 
+along with a pivot chart to display the information. By then adding the month filter to the newly created pivot table, 
+we can see the results for the month of October not only in the table, but the changes are automatically updated in the pivot chart.
+
+When trying to single out specific information in a large dataset, a pivot table is a nice way to show only the information 
+that is required. This allows us to quickly and easily scan the essential information. Pivot charts are a nice accessory to
+pivot tables, as they allow us to visually process data, and in most cases, will let the audience grasp the information quicker. 
+The advantages of selecting a pivot table and chart are: Manipulate data without using formulas Quickly summarize large data sets 
+Ability to display engaging charts and graphs, we learned about the importance of filtering, sorting, performing 
+calculations, and shaping our data to provide meaningful information, and we learned about some of the tools to begin analyzing 
+our data. we will learn more about filtering and sorting our data.
+
+
+
+Filtering and Sorting Data in Excel
+
+we learned how to use the Flash Fill and Text to Columns features in Excel to help clean data. 
+we will discuss how to filter and sort our data to enable us to control what information is displayed, and 
+how it’s displayed in our worksheets. Filtering your data enables you to gain more control over which parts of 
+your data are displayed at any given time in Excel. This can help with the visibility of data by narrowing down
+the data to within specified criteria and parameters, and it can also help when searching for specific pieces of data. 
+To filter your data, the first thing you need to do is turn filtering on, which is very simple. On the Data tab, click Filter, 
+and that’s it. You will now see a small filter icon next to each of the column headers.
+
+As a sidenote; if you want to only filter on one or more columns, select those columns first, then click Filter. 
+As another sidenote; if you format your data as a table, the columns automatically have filter controls added to them. 
+So now, each column has a filter that can be applied to the data in that column. In the Orderdate column you can filter
+on the years, in Productline you can filter on the different product types, and in Customername you can filter on each 
+customer by name. Let’s first filter on the year. We’ll select orders from 2004 only, by deselecting the other year. 
+And if we wanted to, we could expand the year and filter by months also, but we won’t do that for now.
+
+If you look in the status bar at the bottom of the worksheet, you can see that there are only 50 out of 114 records 
+now displayed. If you want to clear a filter, you can either click the ‘Clear Filter From…’ option, or click the Select 
+All item in the filter list. Now let’s filter on the productline column, to display only the rows that hold data for 
+sales of classic cars. And again, we’ll clear the filter. Lastly, we’ll filter on the customername column, and only 
+display sales to Mini Gifts Distributors Ltd. And then clear that filter. So far, we’ve only applied one filter at a 
+time, but suppose you want to filter down to a greater degree?
+
+We can do that too by just enabling all those filters together and now we are only displaying sales of classic cars,
+to Mini Gifts Distributors Ltd, in 2004. Remember, if you only want to clear one filter, then click its filter button
+in the column header, and click the ‘Clear filter from’ option but if you want to quickly clear ALL filters, 
+you can use the Clear button in the Sort & Filter group on the Data tab. So far, we’ve used what are commonly referred 
+to as AutoFilters, but you can also use custom filters to specify other criteria, to apply a filter to text or numbers. 
+For example, if you wanted to see sales orders that are over or under a certain value, you can do that with custom filters. 
+For the sales column, let’s add a number filter that only displays sales that are over $2,000. If you look in the status bar, 
+you can see that we are now showing 111 out of 114 records. Then let’s clear that filter and filter it the other way to display
+the sales orders that are BELOW $2000.
+
+We can see that there are only 3 orders that are below $2000. It’s important to note that the data rows that we don’t see have 
+not been removed they are still there they have just been hidden from view by the filters. And this is indicated by the row 
+numbers you see on the left in blue. The row numbers start at 69, and jump in large increments, indicating that there are many
+more rows of data in our dataset, than are currently being displayed. Let’s clear those filters. If we look at a column filter
+for a column that contains text, you will see that the menu item changes to ‘Text Filters’ instead of ‘Number Filters’,
+and you can see there are several text filter options. (And if you want to turn off filtering altogether for a worksheet, 
+just click the Filter button on the Data tab.
+
+Now, let’s take a look at the basic sorting capabilities in Excel. Sorting is a very important part of the role of a typical 
+Data Analyst. You might need to organize your text-based data alphabetically, your number-based data numerically, 
+or your date-based data chronologically. When you sort data using these logical parameters, it makes it easier for
+you to conceptualize and visualize your data in a more meaningful way. When sorting data, the first thing you need to 
+do is select which data to sort. For example, if you want to sort your customers alphabetically, select a cell in the
+Customername column first and then either sort by A to Z or by Z to A. And if you want to sort your sales figures 
+numerically, select a cell in the Sales column first… and then either sort from smallest to largest or from largest to smallest.
+
+And lastly, if you want to sort your customer’s order dates chronologically, select a cell in the Orderdate column first… 
+then sort from oldest to newest or from newest to oldest. But you can also sort your data by more than one column at a time. 
+Simply select a cell in your data, then on the Data tab, click Sort. Then either use the Sort by column suggested, or use
+the drop-down list to select a different column; in this case we’ll choose the ‘Orderdate’ column as our first sorting criteria,
+and we’ll choose ‘Oldest to Newest’ in the Order drop-down list. To add a further sorting level, you click ‘Add Level’.
+Then you choose another sort column in the ‘Then by’ drop-down list, in our case we’ll choose Sales, and for this sort 
+level we’ll choose ‘Largest to Smallest’ in the Order list. If you have a header row in your data – as we do here – then 
+ensure you select the ‘My data has headers’ checkbox, then click OK to sort.
+
+So, the data is now sorted to list the oldest orders by order date first, then within each order date, 
+if there are multiple instances with the same order date… then the next sorting level lists data by the largest order values first, 
+down to the smallest order values. we learned how to use the Filter and Sort tools in Excel to filter and sort 
+our data to enable us to control what information is displayed, and how it is displayed in our worksheets.
+
+
+Useful Functions for Data Analysis
+
+Now that we’ve learned how to use the Filter and Sort tools in Excel to filter and sort our data to enable us to
+control what information is displayed, and how it is displayed in our worksheets, in this video we’ll discuss
+how to use some of the most common functions a Data Analyst might use; namely IF, IFS, COUNTIF, and SUMIF. First up,
+let’s look at how to use the IF function. The IF function is one of the most used logical functions in Excel. 
+The IF function enables you to logically compare a value against criteria you set in the function, and then return 
+a result based on whether the result of the logical comparison is true or false. And these values can be text values 
+or numeric values. An IF function essentially says; “if something is true, then return a value or do something, 
+but if it’s not true, then return a different value or do something else”. For example, in our vehicle toy sales 
+worksheet, if we wanted to have a column that recorded whether the order had been shipped or not, you could add 
+a new column to the right of the existing column – let’s call it shipped?
+
+and then enter the formula seen in cell H2 This formula is saying – if the text in G2 says ‘shipped’ then return ‘Yes’, 
+and if it doesn’t then return ‘No’. You can then use the Fill Handle to copy this formula down the column.
+You can see that most of the cells do say ‘Yes’, but some don’t, as the order hasn’t been shipped for one reason or another.
+We could also use the IF function to emphasize the size of an order. So, if we add a new column to the right of ‘Sales’,
+and name it ‘3K plus or minus’ Then enter the formula seen in cell F2 This formula is saying – if the order is over three thousand,
+then return the text “Over 3k”, but if it isn’t, then return the text “Under 3k”. And we can copy the formula down the column.
+In an ideal world, you would only use the IF function to apply one or two conditions, but there may be scenarios where you want
+to apply multiple conditions.
+
+In these cases, you can use the ‘nesting’ capabilities of functions to bring together several IF statements in one formula;
+these are called ‘nested IF functions’. For example, if we add another column here for the order size. 
+And then enter the formula seen in cell F2. You can see that this formula, contains multiple IF functions; 
+one is needed for each condition one for Large, one for Medium, and one for Small and it requires three sets of parentheses. 
+So, it’s a relatively long and complex formula, but it does work. Again, we can copy the formula down the column. Even though
+Excel technically supports the nesting of up to 64 different IF functions in a formula, it is not a recommended best practice.
+
+Having multiple IF functions in a single formula can become extremely challenging to manage. For example, suppose you come 
+across a formula like this that you haven’t used for some time, or even worse, was created by someone else; 
+it could be quite difficult to work out how and why it is being used. Also, if your conditions increase, 
+then you need to add more conditions to an already quite complex and long formula, which will only complicate matters more. 
+To resolve this issue, a new function was developed called IFS. The IFS function is only supported on Excel 2019,
+Excel for Microsoft 365, and Excel for the web. As the name suggests, this function can replace multiple nested IF functions 
+being used in a single formula, to simplify matters. (So, if we add a further column for order size but this time we’ll use 
+the IFS function instead.
+
+As you can see in cell G2, this formula only has one set of parentheses instead of three, and only uses one function instead of three.
+Let’s copy that formula down the column too. Now let’s have a look at another example of using the IF function, but we’ll combine
+it with Conditional Formatting too. If we switch to the car sales worksheet… and add a new column to the right of the Year Resale
+Value column and call it ‘Retention %’. Then, we enter the formula seen in cell G2, which will divide the ‘Year Resale Value’, 
+by the original ‘Retail Price’. We need to format this as a percentage. And then we can copy it down the column.
+
+Next, we’ll add a column to highlight the retention value for each car. The formula we add here in cell H2 uses the 
+IF function to state that if the percentage in the previous column is greater than 69%, then mark it as ‘Good’, 
+but if it isn’t, then mark it as ‘Poor’. Once again, we’ll copy the formula down the column. We could also use 
+Conditional Formatting to highlight the retention value percentages even more. We select H2, and on the Home tab, 
+click Conditional Formatting, and make a new rule. The condition in our rule will only format cells that contain a 
+specific text value… and that value is the word ‘GOOD’. And if it does match that condition, then format it with a 
+dark green font and fill the cell in pale green.
+
+Let’s copy that conditional formatting down the rest of the column. You can see that the cells that contain the word 
+’good’ are now formatted as we defined, but the cells containing the word ‘poor’ are not. Let’s add another conditional 
+format rule. This time, we’ll select Manage Rules, because we are going to add another rule to our existing rule. he new
+rule will be the same as the previous one, with the exception of looking for a match with the word ‘poor’ instead, 
+and formatting those matching cells with red text and a pink background fill. And once again, we copy that down the column.
+Now all the cells that contain the word ‘poor’ are formatted as red text with a pink cell fill. Let’s now have a quick look
+at how to use the COUNTIF function.
+
+COUNTIF is one of the statistical functions provided in Excel. You can use it to count the number of cells that meet a certain 
+criterion; such as the number of instances where an employee’s name appears in a list of sales invoices, or the number of 
+occasions a particular part number appears in a list of purchase orders. Let’s switch to the vehicle toy sales worksheet. 
+Suppose you want to find out how many of the sales orders in the list went to customers based in the United Kingdom. 
+We enter the formula you see in cell AD7. Note that when we are using text as a criterion, we have to enclose the text 
+in quotation marks. So there were 6 sales orders in the UK.
+
+And if you wanted to discover the same thing for French customers, then you would just edit the existing formula, or copy 
+it and then edit it. You can see there were 14 orders for French customers. Notice that this time the text entered was in 
+lowercase, and it still works; so names in this function are not case-sensitive. And let’s do the same for United States 
+customers; there are 41 orders to customers based in the states. There is also a newer function called COUNTIFS which applies
+criteria to cells across multiple ranges to count the number of occasions where all criteria have been met. This removes the 
+need to use multiple COUNTIF functions in a long and complex single formula. The COUNTIFS function is only supported on Excel 2019,
+Excel for Microsoft 365, and Excel for the web.
+
+Now let’s take a quick look at how to use the SUMIF function, which is a very commonly used mathematical function in Excel.
+You use the SUMIF function to sum the values within a specified range that meet specified criteria. For example, you might 
+want to add up only the salaries that are over a specified salary level, or you might want to find the total of all sales of 
+a particular product category. We’ll enter the formula seen in cell AD10 This formula will add up each of the sales orders that 
+have a total of more than 3,000 dollars. Again, notice that because we have used an arithmetic operator, that is the ‘greater than’
+operator, we must enclose the criterion in quotes. If we specify a criterion that is only a number, we don’t enclose it in quotes. 
+So, the total sum of all orders that were over 3,000 dollars is almost 470,000 dollars.
+
+You can also use wildcards such as ‘question mark’ (?) and ‘asterisk’ (*) when searching for partial matches, and you can also
+specify to extract values from a different column than the column where you have specified the criteria. For example,
+if we enter the formula you can see in cell AD13, it will sum all the car sales in column E, for only those products in the
+‘productline’ column that end in ‘cars’. There is also a newer function called SUMIFS that you can use to sum cells based on
+multiple criteria. This removes the need to use multiple SUMIF functions in a long and complex single formula. 
+The SUMIFS function is only supported on Excel 2019, Excel for Microsoft 365, and Excel for the web. 
+we learned how to use the IF, IFS, COUNTIF, and SUMIF functions.
+
+we’ll look at how to use the VLOOKUP and HLOOKUP reference functions.
+
+
+Using the VLOOKUP and HLOOKUP Functions
+
+Now that we've learned how to use the IF, IFS, COUNTIF, and SUMIF functions, in this video, we'll look at how to use
+the VLOOKUP and HLOOKUP reference functions. VLOOKUP is one of the most commonly used reference type functions in Excel. 
+It enables you to find data referenced in a lookup table. It stands for vertical lookup, and therefore, is a useful tool 
+when you want to find something in a table or a range by column. Shortly, we will look at HLOOKUP, which stands for
+horizontal lookup, which looks for data by row instead. VLOOKUP works by using a common shared key between the source 
+data and the lookup data in the lookup table. A typical lookup formula would look like equal sign, VLOOKUP( B3,A2:B12,2,FALSE),
+where B3 is the lookup value.
+
+That is the value or word you're looking for. A2:B12 is the lookup table or range. That is the table array or range of
+cells that contains the lookup value. In a formula, Excel references this as table_array. The lookup table can be on the
+same worksheet or in another separate worksheet. Two is the lookup column number. That is the number of the column in the 
+lookup table that contains the value you are looking for.
+
+In a formula, Excel references this as Col_index_num. FALSE is an optional parameter that determines whether the match
+found has to be exact, denoted by false, or can be approximate, denoted by true. In a formula, Excel references this as
+[range_lookup]. The square brackets round this argument in the formula, signifies that it is an optional argument,
+whereas the others are required arguments of a VLOOKUP formula. If you don't specify the optional false or true parameter 
+in your formula, it will default to true. That is an approximate match is required. You can also use the number zero 
+instead of false and the number one instead of true.
+
+Now let's see the VLOOKUP function in action. In the car sales worksheet, suppose we wanted a quick price list of our favorite cars.
+The first thing we need to do is put the column containing the value we want to search for in the left most column as VLOOKUP 
+requires this. Then we can delete the original column. We then enter the formula seen in cell V16, which is looking for the 
+word Corvette in the table array from cell A2 to G156. Then looks for the value in the fifth column, in this case, the price 
+column that matches the row containing Corvette and returns an exact value of $45,705. Note that in this example, we are using
+a part of our existing data table as the lookup table or table array.
+
+Let's format that as US currency, then we'll format it to zero decimal places. In fact, rather than use the reference 
+A25 in the formula, it will be easier to use the reference to the word Corvette in the mini table in this worksheet 
+where our list of favorite cars is. That is V5, and the formula still works. Now, let's copy that formula up to the 
+favorite car table above it in the worksheet. But there's a problem because when we copy the formula, the cell references changed. 
+This happened because as we learned earlier in this course, the default state of cell references is relative, and we want them 
+to be absolute in this case. Let's undo that copy operation.
+
+To make the cell references absolute, we need to add dollar symbols to all the cell references in the formula. This can either 
+be done manually or you can put the cursor in each cell reference in turn in the formula and press F4 each time to automatically 
+add the dollar symbols. Let's try and copy the formula again. This time, it works. If we use the fill handle on cell W5 to copy 
+it down to the rest of the cars, it doesn't work. In fact, we end up with the same result in every cell. Why? Because each one 
+is referencing the same cells in the lookup value, because we used an absolute reference.
+
+All we need to do now is modify the formula to remove the absolute reference for just the column parameter in the lookup 
+value part of the formula by removing the dollar symbol. In cell W5, we change $V$5 to $V5,. Then when we drag the fill handle down,
+it will copy the formula correctly, and all the prices will be changed to reflect their correct retail price. Lastly, to show that
+the two tables are now connected by this VLOOKUP function, if we change the retail price for the Chevrolet Corvette in the main 
+data table and cell E25, the price will also change in the favorite cars price list. Let's now take a look at the HLOOKUP function, 
+which, as we mentioned earlier, does the same thing and works in virtually the same way as the VLOOKUP function, but it looks for 
+data in rows rather than columns. HLOOKUP looks for a word or value in the top row of a table and then returns a value in the
+same column from a row specified in the table array. Therefore, you would use HLOOKUP if your comparison values were situated 
+in a row along the top of a data table.
+
+In contrast, you would use VLOOKUP if your comparison values were located in a column to the left of the data you want to find, 
+as they were in the previous task. Of the two functions, VLOOKUP is used far more frequently than HLOOKUP because of the nature
+of most data tables. The syntax for HLOOKUP is identical to that of VLOOKUP, except that you specify a row index number, 
+referenced in a formula by Excel as row_index_num. This indicates the number of the row in the lookup table that contains 
+the value you are looking for. Let's create a small lookup table on the right hand side of our main data table. 
+A few columns have been hidden in this worksheet to make viewing a little easier. Now we've got low HP, medium HP 
+and high HP in the top row of our lookup table.
+
+Next, we'll add Wingdings symbols as ratings for the three horse power levels. One, sad face for the low horsepower rating, 
+two neutral faces for the medium rating, and three happy faces for the high horsepower rating. Now, let's add a new column
+to the right of the HP level column and call it HP rating. Then in cell L2, we'll enter the HLOOKUP function. 
+This function will look for the value in cell K2, which in this case is medium HP, and it will look for it in 
+the cell range from Y21 to A22, which is our little lookup table. It will return the answer it finds in Row 2 of the
+table under medium HP and use an exact value. Note that we've used some absolute references in this formula too.
+
+Notice that what is returned is the text KK, so we need to format the cell using the Wingdings font.
+Now, when we double click the fill handle, the whole column shows the HP rating symbols relevant to each rows HP level value, 
+and we're done. Although VLOOKUP and HLOOKUP are regularly still used as the defacto functions for lookup references in Excel, 
+there is a newer function called XLOOKUP. This version is only supported on Excel desktop versions from Excel for Microsoft 365 
+and on Excel for the web, as well as on Excel for iPad and iPhone and Excel for Android tablets and phones. XLOOKUP is an improved
+and combined version of VLOOKUP and HLOOKUP together. It can work in any direction vertically or horizontally. It also uses separate
+lookup array and return array values instead of a single table array and a column or row index number.
+we learned how to use the VLOOKUP and HLOOKUP functions in Excel to find and connect to data referenced in both vertical and 
+horizontal lookup tables. the next lesson, we'll start to look at using pivot tables in Excel.
+
+
+Question 1
+Which of the following are valid sorting orders you can choose when adding sorting levels to your data? Select all that apply.
+A. Oldest to Newest
+Smallest to Largest
+Z to A
+
+
+Question 2
+After filtering a column and getting the results, in which two ways can you return to 
+showing all the data in a column? Select two answers. 
+A. clear the filter   
+turn filtering off
+
+Question 3
+What do custom filters provide that AutoFilters don't?
+A. set multiple filters at the same time   
+filter a column to see only above or below a certain value  
+associate a formula with the filter control   
+display more data   
+
+Question 4
+According to the video 'Useful Functions for Data Analysis', what is one of the most common functions a Data Analyst might use?  
+COUNTIF
+RANDBETWEEN
+
+Question 5
+What does VLOOKUP stand for? 
+A. Vertical Lookup   
+
+
+Question 1
+If you have multiple filters set, how can you clear all of them at once?
+Data tab > Sort & Filter group > Clear 
+
+Question 2
+After enabling Filtering, where can you see and access the filter controls?  
+Each column header now has a filter control 
+
+Question 3
+The IF function applies to one or two conditions, but what if you need to apply multiple conditions?
+Use the nesting capabilities of the IF function 
+
+Question 4
+When you use nested functions, what is required for each of the functions?
+A set of parentheses for each function 
+
+Question 5
+The difference between HLOOKUP, VLOOKUP, and XLOOKUP is how they look for data. How does each look for data?
+HLOOKUP = by column
+VLOOKUP = by row
+XLOOKUP = in all directions 
+
+
+Introduction to Creating Pivot Tables in Excel
+
+Now that we’ve learned how to use the VLOOKUP and HLOOKUP functions, we’ll look at how to create and use Pivot Tables in Excel. 
+We’ll first look at how to format our data as a table, then how to create Pivot Tables and use fields in a Pivot Table
+to analyze data, and lastly we’ll see how to perform calculations in a Pivot Table. Having a worksheet full of informational
+data is all very well, but to really get some use out of it we need to analyze it from different perspectives to find 
+answers to questions related to the data. Now, we’ve already used features such as filters and formulas to draw mathematical 
+and logical conclusions about our data but not all questions can be answered easily using filters and formulas alone. 
+In order to obtain usable and presentable insights into your data, you need something else… and that something else is Pivot Tables.
+Pivot Tables provide a simple and quick way, in spreadsheets, to summarize and analyze data, to observe trends and patterns 
+in your data and to make comparisons of your data. A Pivot Table is dynamic, so as you change and add data to the original 
+dataset on which the Pivot Table is based, so the analysis and summary information changes too.
+
+A Data Analyst can use Pivot Tables to draw useful and relevant conclusions about, and create insights into, 
+an organization’s data in order to present those insights to interested parties within the company. 
+Before you start to create a Pivot Table in Excel, it can be very helpful to first format your data as a table. 
+The reason for this is not only to make it more organized and defined and to add table styles to your data, 
+but primarily it makes it a lot easier when adding records to the dataset. In the car sales worksheet, 
+let’s first select any cell within the data, and then on the Home tab, in the Styles group, choose ‘Format as Table’. 
+Then, choose a style from the gallery. Note that Excel automatically knows the boundaries of our data range, 
+but we can change this if we need to. And ensure you select ‘My table has headers’, if indeed it does.
+
+After you click OK and the data has been formatted as a table, note the filter drop-downs at the top of 
+each column – these are automatically added when you format as a table. If we now scroll down to the bottom of the table, 
+and start adding another row of data for another vehicle, when you click Tab or Enter, note that it is automatically
+formatted and included as part of our table. OK, now let’s see how to create a basic Pivot Table, and how to use fields
+to arrange data in a Pivot Table. Just before we do that, there are a few things you should use as a checklist to ensure
+your data is in a fit state to make a Pivot Table from, and these are: Format your data as a table for best results 
+Ensure column headings are correct, and there is only one header row, as these column headings become the field names 
+in a Pivot Table Remove any blank rows and columns, and try to eliminate blank cells also Ensure value fields are formatted
+as numbers, and not text Ensure date fields are formatted as dates, and not text In the worksheet, we can just select any 
+cell in the table. Then, on the Insert tab, we click PivotTable. Note that in the ‘Select a table or range’ box, 
+the table name – Table1 – is already entered for us. If we hadn’t just formatted this data as a table, 
+we would specify the cell range here instead.
+
+Under that, we need to decide whether we want to create the Pivot Table on a separate new blank worksheet, 
+or on this worksheet – a new worksheet is the default – and is the most commonly used option. 
+So, a new blank worksheet opens, displaying some basic Pivot Table instructions in the graphic on the left of the worksheet,
+and a ‘PivotTable Fields’ pane on the right. You can rename the worksheet for the Pivot Table if you wish. 
+To build the Pivot Table report we need to add some fields from the top of the PivotTable Fields pane, 
+to one or more of the sections in the bottom part of the pane. For example, if we want to find out the total sales 
+for each model of car, let’s drag the Manufacturer field to the Rows section of the report, and then we’ll drag the Model 
+field there too. But this isn’t really the way we want it to look, so we’ll drag the Manufacturer field to appear at the 
+top of the Rows section above the Model, which makes more sense with our data. Next, we’ll add the Price field to the
+Columns section, but again that really isn’t the way we want to view the data, so we’ll drag Price to the Values
+section instead, which makes a lot more sense and looks a lot better.
+
+Next, we’ll add the Unit Sales field to Values too, so now we can see both the individual price for each model and the 
+number of unit sales of each model. Let’s add the Vehicle-type field to Columns, but that doesn’t seem very useful, 
+so let’s remove that field, which we can do in two ways: Either by using the drop-down menu, or, if we undo that, 
+we can also do it by simply dragging the field out of the Columns section, either to the left over the worksheet,
+or to the top over the fields list above. Let’s now look at how to perform a simple calculation in a Pivot Table. 
+If we look in the ‘Sum of Price’ column in our Pivot Table, we can see that the figures are formatted as General. 
+So first, let’s change the format for these figures to US currency. This can be done by modifying the value field 
+settings for the field in the relevant section of the PivotTable Fields pane. We’ll format the field as US dollars
+and show no decimal places.
+
+Next, we’ll add a calculated field from the ‘PivotTable Analyze’ tab, using the ‘Fields, Items & Sets’ button.
+We want this field to calculate the total sales for each model by multiplying the price by the number of unit sales. 
+When we create and add this formula, it gets added to the PivotTable Fields pane, as a field called Total Model Sales. 
+And we can change the format to make it US dollars again. A new column called ‘Sum of Total Model Sales’ has now appeared in 
+the Pivot Table in our worksheet. In row 5, we can see that there have been over 360 million dollars of sales of the Acura 
+Integra model, and in row 7, we can see that there has been over a billion dollars in sales of the Acura TL model. 
+we learned how to format data as a table, how to create a Pivot Table and use fields to analyze data in a Pivot Table, 
+and how to perform calculations using Pivot Table data.
+
+we’ll look at some other features of Pivot Tables.
+
+Pivot Table Features
+
+en
+​
+Interactive Transcript 
+Now that we’ve learned how to create and use Pivot Tables in Excel, we’ll look at some other features that we can use with Pivot Tables,
+including Recommended Pivot Tables, Filters, Slicers, and Timelines. Now that we’ve learned how to create and use Pivot Tables in Excel,
+in this video we’ll look at some other features that we can use with Pivot Tables, including 
+Recommended Pivot Tables, Filters, Slicers, and Timelines. First, let’s look at Recommended Pivot Tables,
+which isn’t exactly a feature as such; it’s really more of a list of suggested different combinations of data that 
+could be used when creating a Pivot Table. These recommendations are based on the data we select in the worksheet, 
+and they are a great way to get started creating Pivot Tables if you don’t have much experience with them yet. 
+For example, in the vehicle toy sales worksheet, if we select column B, which contains data about the quantity of 
+items ordered, … when we choose Recommended Pivot Tables from the Insert tab, then we are presented with a list of 
+potential data combinations related to the order quantity information. (3) However, if we select column F, which contains Order
+Size information, then the recommended pivot table list changes to reflect that data. (6) And if we select column E, which
+contains sales information, then the pivot tables recommended are related to sales data.
+
+Let’s select the third one down, which is the sum of sales by territory; because that sounds like something we could get 
+some useful insight from, by presenting it in a pivot table. Note that a new worksheet is opened containing the recommended
+pivot table, and a new pane opens on the right, called PivotTable Fields. Let’s rename the worksheet to something more meaningful. 
+In the PivotTable Fields pane, you can see that some fields have already been added to the Rows and Values areas. 
+Although it’s a recommended pivot table, we can still make it our own, by adding more fields for example. 
+So, let’s add the Productline item to the Columns area using drag and drop. Now we have columns for each of the product
+lines in our pivot table, such as motorcycles, ships, and trains.
+
+In the pivot table, we can manually expand any field we want to view its contents. Here we can see that the order dates 
+are located underneath the territory names in our pivot table. Note that this matches the order of the fields in the Rows 
+area of the PivotTable Fields pane. We can manually collapse each of the fields too. But we also have the option of 
+expanding all the fields at once, … and collapsing them all too. The next feature we will delve into is pivot table 
+filtering. Pivot table filters work in much the same way as the standard filters we used earlier in the course.
+
+Note that we already have some in-built filtering in this pivot table. For example, the Row Labels header is a filter,
+and we can filter on any of the listed territories, such as Japan. Just like standard filters, it’s very simple to clear
+a filter in a pivot table. We also have a Column Labels filter, allowing us to filter on any of the productline items in
+this pivot table; for example we could show data only for the trains product. (7) We also have the option of adding the
+Productline field as a standard filter instead of a column heading, by dragging it to the Filters area in the PivotTable 
+Fields pane. And we can then use it as a standard filter, as we have done earlier in this course. The filter also allows 
+us to select multiple filter items.
+
+But because it is now being used as a standard filter rather than a column header, we can’t see the split of the information 
+on these two product lines; we just see a combined total. When we had the filter as a column header, the information on each 
+product line was presented separately in each column. Let’s display all the field totals again. And we’ll drag the productline 
+field back to the Columns area where it was previously, so we can see the split of our different product lines in the pivot table. 
+The next pivot table feature we will look at are Slicers. Slicers are essentially on-screen graphical filter objects that enable
+you to filter your data using buttons. Slicers make it easy to perform quick filtering of your pivot table data, and they also 
+display the current filter state, making it easier for you to know, and see, what data is currently being shown, and which is 
+being hidden, by the filter.
+
+For example, if we remove the productline field from the pivot table by dragging it out of the PivotTable Fields pane, ... and then, 
+from the PivotTable Analyze tab, we click Insert Slicer,... and then choose the Territory field as our slicer,… we can see that the 
+slicer can be freely moved around anywhere on the worksheet, and it contains buttons for each of the territory items, such as EMEA,
+North America, and Japan. We can also select the Multi-Select button to filter on multiple territories if we wish. We can click the 
+Clear Filter button to clear all slicer filters. Let’s add another slicer to our worksheet for the productline field. However, 
+be sure to select a cell in the pivot table first, because if you don’t, then the insert slicer button won’t work. Note that slicers 
+can also be added from the Filters group on the Insert tab as well as from the PivotTable Analyze tab. We’ll select the Productline 
+field this time for our slicer, and drag it near the top of the worksheet.
+
+As before, we can select only one slicer item, or we can turn on Multi-Select and choose several items to filter on in the slicer. 
+Then let’s clear the slicer filters, … and now let’s filter using both slicers. Note that when you use multi-select filtering,
+when you select an item, you are in fact filtering it out; that is, you are defining which items will NOT be displayed in the
+pivot table. This is the opposite behavior to when you are selecting single items in a slicer. So now we are displaying only 
+‘classic cars’, ‘trains’, and ‘trucks and buses’ products for the EMEA and North America territories. 
+Now let’s clear those slicer filters, and put the productline field back in the Columns area of the pivot table,
+so it’s ready for the next feature we will explore. And let’s move these slicers out of the way, further down the worksheet.
+
+The last useful feature for pivot tables we are going to look at, is Timelines. A Timeline is another type of filter
+tool that enables you to filter specifically on date-related data in your pivot table. This is a much quicker and more 
+effective way of dynamically filtering by date, rather than having to create and adjust filters on your date columns. 
+We can add a Timeline for our pivot table either from the PivotTable Analyze tab, or from the Insert tab. 
+Again, ensure you select any cell in the pivot table first. We’ll select the Orderdate field as our Timeline filter.
+Then we can drag it up the worksheet and enlarge it.
+
+The default for this timeline is to display data by month, but you can also filter by days, … or by quarters. 
+You can select a single quarter; or you can select a range of quarters. In this case, we’ll select twelve months between 
+quarter 3 of 2003 and quarter 2 of 2004. You use the Clear Filter button to clear a timeline filter. You can also filter by years. 
+For example, here we have selected 2003 only. And you can combine slicers and timelines as filters in a pivot table.
+
+For example, here we can filter the slicers to display only data for trains, in the EMEA and North America territories, 
+and only in the year 2003. And if we filter on the year 2004 instead, you’ll see that there is no data being displayed; 
+meaning that there were no sales of train products in 2004 in either the EMEA or the North America territories. 
+(15) Timelines and Slicers have their own tabs in the ribbon when you select them, and their properties can be modified to 
+change how they look and how they work. For example, let’s change this Timeline to a light green shade, … and let’s change
+this Slicer to a nice orange color. And lastly, to remove a timeline or slicer, you can either select it and press
+the Delete key, … or right-click it and choose Cut. we learned about some of the other features in 
+Excel that we can use with Pivot Tables, namely; Recommended Pivot Tables, Filters, Slicers, and Timelines.
+
+Summary and Highlights
+In this lesson, you have learned the following information: 
+
+Pivot Tables:
+
+To obtain usable and presentable insights into your data you need to use Pivot Tables. 
+Pivot tables provide a simple and quick way to summarize and analyze data, to observe trends and patterns 
+in your data and to make comparisons of your data. 
+
+Pivot tables are dynamic, so as you change and add data to the original dataset on which the pivot table is 
+based, the analysis and summary information changes too. 
+
+A Data Analyst can use pivot tables to draw useful and relevant conclusions about, and create insights into,
+an organization’s data in order to present those insights to interested parties within the company. 
+
+Use this Pivot Table checklist to ensure your data is in a fit state to make a Pivot Table: 
+Format your data as a table for best results.
+Ensure column headings are correct, and there is only one header row, as these column headings become 
+the field names in a Pivot Table.
+Remove any blank rows and columns, and try to eliminate blank cells also.
+Ensure value fields are formatted as numbers, and not text, and ensure date fields are formatted as dates, and not text.
+Arranging Pivot Tables with Filters and Recommended Tables:
+You use the Pivot Table Fields pane to add and arrange data fields in your pivot table. 
+Recommended Pivot Tables are a list of suggested different combinations of data that could be used when creating a Pivot Table, 
+based on the data selected in the worksheet. 
+
+Filters and Slicers:
+Slicers are on-screen graphical filter objects that enable you to filter your data using buttons, which makes it easier
+to perform quick filtering of your pivot table data. 
+Timelines are another type of filter tool that enable you to filter specifically on date-related data in your pivot table. 
+This is a much quicker and more effective way of dynamically filtering by date, rather than having to create and adjust 
+filters on your date columns. 
+
+
+
+Question 1
+Before creating a pivot table, how should you format your data? 
+A. As a table
+
+Question 2
+How can you add more filters to the pivot table?
+A. Drag a field to the Filters area of the PivotTable Fields pane
+
+Question 3
+What must you do first before adding another slicer to a pivot table?
+A. Select a cell in the pivot table
+
+Question 4
+Which of the following features in Excel provides suggested combinations of data for creating Pivot Tables based on the selected data?
+A. Recommended Pivot Tables
+
+
+
+Question 1
+What should you remove before making a Pivot Table?
+Blank rows, columns, and cells 
+Value fields and row labels 
+Row labels, columns, data fields 
+Date fields, value fields, and cells 
+
+
+Question 2
+What is automatically added after formatting data as a table?
+Column headers at the top of columns 
+Data bars presented at the top
+Filter drop-downs at the top of columns
+Alternate light/dark rows at the bottom 
+
+
+Question 3
+After creating a pivot table and selecting it, what pane appears to the right of the pivot table? 
+The PivotTable Properties pane 
+The PivotTable Metadata pane
+The PivotTable Fields pane
+Additional pivot table examples 
+
+
+Question 4
+What do Timelines provide in pivot tables?
+Preview views of different filters
+Provide details of all actions performed during a given period 
+Let you filter specifically on date-related data 
+Set the pivot table to an earlier view
+
+
+Question 5
+What is one way to remove a slicer or timeline?
+Right-click it and select cut 
+Create a new one 
+Remove all filters from the pivot table 
+Press CTRL+Z 
 
